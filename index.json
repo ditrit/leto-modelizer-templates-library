@@ -1,0 +1,35 @@
+{
+  "name": "Leto-modelizer-templates-library",
+  "version": "0.1.0",
+  "description": "Library that contains all default templates for leto-modelizer.",
+  "author": "Vincent Moittie <moittie.vincent@gmail.com>",
+  "templates": [
+    {
+      "key": "terraform_webapp",
+      "name": "Web application",
+      "plugin": "terrator-plugin",
+      "type": "model",
+      "description": "Schema of web application.",
+      "url": null,
+      "files": ["main.tf"]
+    },
+    {
+      "key": "terraform_java_webapp",
+      "name": "Java web application",
+      "plugin": "terrator-plugin",
+      "type": "model",
+      "description": "Schema of java web application.",
+      "url": null,
+      "files": ["main.tf"]
+    },
+    {
+      "key": "terraform_aws_provider",
+      "name": "Aws provider",
+      "plugin": "terrator-plugin",
+      "type": "component",
+      "description": "Initialized aws provider.",
+      "url": null,
+      "files": ["provider.tf"]
+    }
+  ]
+}
