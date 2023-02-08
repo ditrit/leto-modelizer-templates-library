@@ -31,3 +31,29 @@ metadata structure:
 3. Create all the files (you) mentioned in this folder with the code of your template
 4. (Optional) Provide an icon for your template (only `icon.svg` will be used by leto-modelizer)
 5. (Optional) Provide a schema for your template (only `schema.svg` will be used by leto-modelizer)
+
+## Notes
+
+### Component template
+
+When you create component template, you must use a function to generate id(s).
+
+To do that you can use this in your template:
+```tf
+# app.tf
+resource "server" "{{ generateId('resource_')}}" {
+  (...)
+}
+```
+
+By default, function `generateId` generate an id like `XXXXXX`. You can improve the id with a prefix parameter.
+
+The previous example will generate:
+```tf
+# app.tf
+resource "server" "resource_123456" {
+  (...)
+}
+```
+
+For more information, see [nunjucks](https://mozilla.github.io/nunjucks/).

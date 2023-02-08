@@ -1,3 +1,3 @@
-provider "aws" {
+provider "{{ generateId() }}" {
   region = "fr"
 }
