@@ -41,6 +41,15 @@
       "files": ["app.tf"]
     },
     {
+      "key": "project_template",
+      "name": "Project template",
+      "type": "project",
+      "description": "Project template example.",
+      "url": null,
+      "models": ["terrator-plugin/infra1", "terrator-plugin/infra2", "leto-modelizer-plugin-test/test1"],
+      "files": ["terrator-plugin/infra1/main.tf", "terrator-plugin/infra1/provider.tf", "terrator-plugin/infra2/main.tf", "leto-modelizer-plugin-test/test1/default.plugin-test.js"]
+    },
+    {
       "key": "plugin_test_multi_component",
       "name": "Multi component",
       "plugin": "leto-modelizer-plugin-test",
