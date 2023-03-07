@@ -75,6 +75,15 @@
       "description": "Configured SSH security_group",
       "url": "https://github.com/ditrit/leto-modelizer-templates-library/terraform_aws_ssh_security_group#readme",
       "files": ["main.tf"]
+    },
+    {
+      "key": "terraform_basic_infra",
+      "name": "Basic infrastructure",
+      "plugin": "terrator-plugin",
+      "type": "model",
+      "description": "Schema of a basic infrastructure with a VPC and load balancer.",
+      "url": null,
+      "files": ["main.tf"]
     }
   ]
 }
