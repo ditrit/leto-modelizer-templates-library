@@ -23,15 +23,6 @@
       "files": ["main.tf"]
     },
     {
-      "key": "terraform_aws_provider",
-      "name": "Aws provider",
-      "plugin": "terrator-plugin",
-      "type": "component",
-      "description": "Initialized aws provider.",
-      "url": null,
-      "files": ["provider.tf"]
-    },
-    {
       "key": "terraform_test_application",
       "name": "Test application",
       "plugin": "terrator-plugin",
@@ -39,15 +30,6 @@
       "description": "Initialized test application.",
       "url": null,
       "files": ["app.tf"]
-    },
-    {
-      "key": "project_template",
-      "name": "Project template",
-      "type": "project",
-      "description": "Project template example.",
-      "url": null,
-      "models": ["terrator-plugin/infra1", "terrator-plugin/infra2", "leto-modelizer-plugin-test/test1"],
-      "files": ["terrator-plugin/infra1/main.tf", "terrator-plugin/infra1/provider.tf", "terrator-plugin/infra2/main.tf", "leto-modelizer-plugin-test/test1/default.plugin-test.js"]
     },
     {
       "key": "plugin_test_multi_component",
@@ -77,13 +59,31 @@
       "files": ["main.tf"]
     },
     {
-      "key": "terraform_basic_infra",
-      "name": "Basic infrastructure",
+      "key": "terraform_aws_basic_infra",
+      "name": "AWS basic infrastructure",
       "plugin": "terrator-plugin",
       "type": "model",
       "description": "Schema of a basic infrastructure with a VPC and load balancer.",
       "url": null,
       "files": ["main.tf"]
+    },
+    {
+      "key": "terraform_aws_s3_bucket_acl",
+      "name": "AWS S3 Bucket ACL",
+      "plugin": "terrator-plugin",
+      "type": "model",
+      "description": "Schema of a S3 bucket and ACL.",
+      "url": null,
+      "files": ["main.tf"]
+    },
+    {
+      "key": "terraform_private_aws_s3_bucket",
+      "name": "Project private AWS S3 bucket",
+      "type": "project",
+      "description": "Project private infrastructure with AWS S3 bucket.",
+      "url": null,
+      "models": ["terraform_aws_basic_infra", "terraform_aws_s3_bucket_acl"],
+      "files": ["terraform_aws_basic_infra/main.tf", "terraform_aws_s3_bucket_acl/main.tf"]
     }
   ]
 }
