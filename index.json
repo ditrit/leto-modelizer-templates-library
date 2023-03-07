@@ -5,24 +5,6 @@
   "author": "Vincent Moittie <moittie.vincent@gmail.com>",
   "templates": [
     {
-      "key": "terraform_webapp",
-      "name": "Web application",
-      "plugin": "terrator-plugin",
-      "type": "model",
-      "description": "Schema of web application.",
-      "url": null,
-      "files": ["main.tf"]
-    },
-    {
-      "key": "terraform_java_webapp",
-      "name": "Java web application",
-      "plugin": "terrator-plugin",
-      "type": "model",
-      "description": "Schema of java web application.",
-      "url": null,
-      "files": ["main.tf"]
-    },
-    {
       "key": "terraform_test_application",
       "name": "Test application",
       "plugin": "terrator-plugin",
@@ -82,8 +64,8 @@
       "type": "project",
       "description": "Project private infrastructure with AWS S3 bucket.",
       "url": null,
-      "models": ["terraform_aws_basic_infra", "terraform_aws_s3_bucket_acl"],
-      "files": ["terraform_aws_basic_infra/main.tf", "terraform_aws_s3_bucket_acl/main.tf"]
+      "models": ["terrator-plugin/terraform_aws_basic_infra", "terrator-plugin/terraform_aws_s3_bucket_acl"],
+      "files": ["terrator-plugin/terraform_aws_basic_infra/main.tf", "terrator-plugin/terraform_aws_s3_bucket_acl/main.tf"]
     }
   ]
 }
