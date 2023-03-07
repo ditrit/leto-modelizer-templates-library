@@ -66,6 +66,15 @@
       "description": "Initialized test truck.",
       "url": "https://github.com/ditrit/leto-modelizer-templates-library#readme",
       "files": ["default.plugin-test.js"]
+    },
+    {
+      "key": "terraform_aws_ssh_security_group",
+      "name": "AWS SSH security_group",
+      "plugin": "terrator-plugin",
+      "type": "component",
+      "description": "Configured SSH security_group",
+      "url": "https://github.com/ditrit/leto-modelizer-templates-library/terraform_aws_ssh_security_group#readme",
+      "files": ["main.tf"]
     }
   ]
 }
