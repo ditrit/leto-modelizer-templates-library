@@ -1,0 +1,124 @@
+{
+  "terrator-plugin": {
+    "eu-west-3a": {
+      "x": 154.099609375,
+      "y": -6.573709487915039,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "eu-west-3b": {
+      "x": 153.57369995117188,
+      "y": 81.95219421386719,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "eu-west-3c": {
+      "x": 154.4820556640625,
+      "y": 172.4661407470703,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "main_vpc": {
+      "x": -7.803031921386719,
+      "y": -7.0584259033203125,
+      "width": 152,
+      "height": 665,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "frontend_subnet_az1": {
+      "x": 6.857902526855469,
+      "y": 5.739963531494141,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "frontend_subnet_az2": {
+      "x": 7.224216461181641,
+      "y": 99.66815948486328,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "frontend_subnet_az3": {
+      "x": 6.6681671142578125,
+      "y": 194,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "ubuntu": {
+      "x": 153.9402313232422,
+      "y": 268,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "frontend_secgroup_ssh": {
+      "x": 6.6728973388671875,
+      "y": 470.30841064453125,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "lb_secgroup_https": {
+      "x": 6.497493743896484,
+      "y": 287.26544189453125,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "lb_secgroup_http": {
+      "x": 6.258708953857422,
+      "y": 379.12188720703125,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "frontend_lb": {
+      "x": -243.03585815429688,
+      "y": 264.9800720214844,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "https_lb_listener": {
+      "x": -172.66534423828125,
+      "y": 424.9402160644531,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "http_lb_listener": {
+      "x": -300.1673278808594,
+      "y": 424.900390625,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "lb_target": {
+      "x": -234.900390625,
+      "y": 706.4900512695312,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    }
+  }
+}
