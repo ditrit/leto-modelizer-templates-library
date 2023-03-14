@@ -85,7 +85,7 @@ For more information, see [nunjucks](https://mozilla.github.io/nunjucks/).
 
 ### Project template
 
-When you create project template, you don't need to specify a `plugin` but you have to add `models` with the list of models for your project.
+When you create project template, you don't need to specify a `plugin` but you have to add `models` with the list of models for your project. If you want to use existing models, you need to copy them in your project template folder.
 
 Example of metadata structure for project template with 2 plugins and 3 models:
 ```json
