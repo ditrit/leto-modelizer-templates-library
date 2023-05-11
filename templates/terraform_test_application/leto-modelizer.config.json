@@ -1,0 +1,28 @@
+{
+  "terrator-plugin": {
+    "{{getId('SecurityGroup')}}": {
+      "x": 159,
+      "y": 118,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "{{getId('VPC')}}": {
+      "x": 442,
+      "y": 48,
+      "width": 175,
+      "height": 225,
+      "needsResizing": false,
+      "needsPositioning": false
+    },
+    "{{getId('InternetGateway')}}": {
+      "x": 30,
+      "y": 30,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    }
+  }
+}

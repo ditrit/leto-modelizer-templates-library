@@ -38,7 +38,7 @@
       "type": "component",
       "description": "Initialized test application.",
       "url": null,
-      "files": ["app.tf"]
+      "files": ["app.tf", "leto-modelizer.config.json"]
     },
     {
       "key": "project_template",
@@ -46,8 +46,17 @@
       "type": "project",
       "description": "Project template example.",
       "url": null,
-      "models": ["terrator-plugin/infra1", "terrator-plugin/infra2", "leto-modelizer-plugin-test/test1"],
-      "files": ["terrator-plugin/infra1/main.tf", "terrator-plugin/infra1/provider.tf", "terrator-plugin/infra2/main.tf", "leto-modelizer-plugin-test/test1/default.plugin-test.js"]
+      "models": [
+        "terrator-plugin/infra1",
+        "terrator-plugin/infra2",
+        "leto-modelizer-plugin-test/test1"
+      ],
+      "files": [
+        "terrator-plugin/infra1/main.tf",
+        "terrator-plugin/infra1/provider.tf",
+        "terrator-plugin/infra2/main.tf",
+        "leto-modelizer-plugin-test/test1/default.plugin-test.js"
+      ]
     },
     {
       "key": "plugin_test_multi_component",
