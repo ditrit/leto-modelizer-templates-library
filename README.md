@@ -35,6 +35,7 @@ metadata structure for project template:
 {
     "key": "terraform_webapp",
     "name": "Web application",
+    "plugins": ["terrator-plugins"],
     "type": "project",
     "description": "Schema of web application.",
     "url": null,
@@ -46,6 +47,7 @@ metadata structure for project template:
 - `key` attribute is the folder name of your template under the `templates` folder.
 - `name` attribute is the display name used in leto-modelizer.
 - `plugin` attribute is the plugin name used by the template. Only for `model` and `component` templates.
+- `plugins` attribute is all plugin names used by the template. Only for `project` templates.
 - `type` attribute is the template type, either `model`, `component` or `project`.
 - `description` attribute is the description used in leto-modelizer to explain the usage of this template.
 - `url` attribute is an url attached to a documentation of this template used in leto-modelizer.
@@ -85,13 +87,14 @@ For more information, see [nunjucks](https://mozilla.github.io/nunjucks/).
 
 ### Project template
 
-When you create project template, you don't need to specify a `plugin` but you have to add `models` with the list of models for your project. If you want to use existing models, you need to copy them in your project template folder.
+When you create project template, you need to specify all `plugins` the template will use. You have to add `models` with the list of models for your project. If you want to use existing models, you need to copy them in your project template folder.
 
 Example of metadata structure for project template with 2 plugins and 3 models:
 ```json
 {
     "key": "example_project",
     "name": "Example project",
+    "plugins": ["terrator-plugins"],
     "type": "project",
     "description": "Example project with multiple plugins and models.",
     "url": null,
