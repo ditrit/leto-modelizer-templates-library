@@ -43,6 +43,7 @@
     {
       "key": "project_template",
       "name": "Project template",
+      "plugins": ["terrator-plugin", "leto-modelizer-plugin-test"],
       "type": "project",
       "description": "Project template example.",
       "url": null,
