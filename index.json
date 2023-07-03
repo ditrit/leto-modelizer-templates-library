@@ -23,6 +23,15 @@
       "files": ["main.tf"]
     },
     {
+      "key": "github_CI",
+      "name": "Default CI",
+      "plugin": "githubator-plugin",
+      "type": "model",
+      "description": "GITHUB",
+      "url": null,
+      "files": ["CI.yml"]
+    },
+    {
       "key": "terraform_aws_provider",
       "name": "Aws provider",
       "plugin": "terrator-plugin",
@@ -43,30 +52,17 @@
     {
       "key": "project_template",
       "name": "Project template",
-      "plugins": ["terrator-plugin", "leto-modelizer-plugin-test"],
+      "plugins": ["terrator-plugin", "githubator-plugin"],
       "type": "project",
       "description": "Project template example.",
       "url": null,
-      "models": ["terrator-plugin/infra1", "terrator-plugin/infra2", "leto-modelizer-plugin-test/test1"],
-      "files": ["terrator-plugin/infra1/main.tf", "terrator-plugin/infra1/provider.tf", "terrator-plugin/infra2/main.tf", "leto-modelizer-plugin-test/test1/default.plugin-test.js"]
-    },
-    {
-      "key": "plugin_test_multi_component",
-      "name": "Multi component",
-      "plugin": "leto-modelizer-plugin-test",
-      "type": "component",
-      "description": "Schema of multi component.",
-      "url": null,
-      "files": ["default.plugin-test.js"]
-    },
-    {
-      "key": "plugin_test_truck",
-      "name": "Test truck",
-      "plugin": "leto-modelizer-plugin-test",
-      "type": "component",
-      "description": "Initialized test truck.",
-      "url": "https://github.com/ditrit/leto-modelizer-templates-library#readme",
-      "files": ["default.plugin-test.js"]
+      "schemas": ["schema_model1.svg", "schema_model2.svg", "schema_model3.svg"],
+      "files": [
+        ".github/workflows/CI.yml",
+        "infra/dev/main.tf",
+        "infra/dev/provider.tf",
+        "infra/prod/main.tf"
+      ]
     }
   ]
 }
