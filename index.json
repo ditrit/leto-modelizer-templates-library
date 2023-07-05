@@ -14,24 +14,6 @@
       "files": ["app.tf"]
     },
     {
-      "key": "plugin_test_multi_component",
-      "name": "Multi component",
-      "plugin": "leto-modelizer-plugin-test",
-      "type": "component",
-      "description": "Schema of multi component.",
-      "url": null,
-      "files": ["default.plugin-test.js"]
-    },
-    {
-      "key": "plugin_test_truck",
-      "name": "Test truck",
-      "plugin": "leto-modelizer-plugin-test",
-      "type": "component",
-      "description": "Initialized test truck.",
-      "url": "https://github.com/ditrit/leto-modelizer-templates-library#readme",
-      "files": ["default.plugin-test.js"]
-    },
-    {
       "key": "terraform_aws_ssh_security_group",
       "name": "AWS SSH security_group",
       "plugin": "terrator-plugin",
@@ -65,7 +47,7 @@
       "plugins": ["terrator-plugin"],
       "description": "Project private infrastructure with AWS S3 bucket.",
       "url": null,
-      "models": ["terrator-plugin/terraform_aws_basic_infra", "terrator-plugin/terraform_aws_s3_bucket_acl"],
+      "schemas": ["terrator-plugin/terraform_aws_basic_infra/schemas.svg", "terrator-plugin/terraform_aws_s3_bucket_acl/schemas.svg"],
       "files": ["terrator-plugin/terraform_aws_basic_infra/main.tf", "terrator-plugin/terraform_aws_s3_bucket_acl/main.tf"]
     }
   ]
