@@ -35,11 +35,11 @@ metadata structure for project template:
 {
     "key": "terraform_webapp",
     "name": "Web application",
-    "plugins": ["terrator-plugins"],
+    "plugins": ["terrator-plugin"],
     "type": "project",
     "description": "Schema of web application.",
     "url": null,
-    "models": ["plugin1/model1", "plugin1/model2", "plugin2/model3"],
+    "schemas": ["plugin1/model1/schemas.svg", "plugin1/model2/schemas.svg", "plugin2/model3/schemas.svg"],
     "files": ["plugin1/model1/main.js", "plugin1/model2/main.js", "plugin2/model3/app.js"]
 }
 ```
@@ -51,7 +51,7 @@ metadata structure for project template:
 - `type` attribute is the template type, either `model`, `component` or `project`.
 - `description` attribute is the description used in leto-modelizer to explain the usage of this template.
 - `url` attribute is an url attached to a documentation of this template used in leto-modelizer.
-- `models` attribute is the list of models used in the project. Same as `files`, without the file name. Only for `project` template.
+- `schemas` attribute is the list of schemas of this project. Same as `files`, only for `project` template.
 - `files` attribute is the list of files used in the template.
 
 2. Create the folder of your template with the chosen key you provided in the [index.json](index.json)
@@ -94,11 +94,11 @@ Example of metadata structure for project template with 2 plugins and 3 models:
 {
     "key": "example_project",
     "name": "Example project",
-    "plugins": ["terrator-plugins"],
+    "plugins": ["terrator-plugin", "githubator-plugin"],
     "type": "project",
     "description": "Example project with multiple plugins and models.",
     "url": null,
-    "models": ["plugin1/model1", "plugin1/model2", "plugin2/model3"],
+    "schemas": ["plugin1/model1/schemas.svg", "plugin1/model2/schemas.svg", "plugin2/model3/schemas.svg"],
     "files": ["plugin1/model1/main.js", "plugin1/model2/main.js", "plugin2/model3/app.js"]
 }
 ```
