@@ -61,6 +61,47 @@ metadata structure for project template:
 
 ## Notes
 
+### Component position
+
+If you want to specify the position of the component(s) of your template, you need to do it in the file 'leto-modelizer.config.json'.
+The content will specify the name of the plugin(s), the component(s) associated and their position attributes.
+
+```json
+{
+  "terrator-plugin": {
+    "eu-west-3a": {
+      "x": 154.099609375,
+      "y": -6.573709487915039,
+      "width": 110,
+      "height": 80,
+      "needsResizing": false,
+      "needsPositioning": false
+    }
+  }
+}
+```
+
+The content of this file will be added to the project config file like this:
+
+```json
+{
+  "modelName": {
+    "terrator-plugin": {
+      "eu-west-3a": {
+        "x": 154.099609375,
+        "y": -6.573709487915039,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false
+      }
+    }
+  }
+}
+```
+
+Don't forget to add 'leto-modelizer.config.json' in the attribute 'files' of you template in 'index.json'.
+
 ### Component template
 
 When you create component template, you must use a function to generate id(s).
