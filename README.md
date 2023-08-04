@@ -39,7 +39,7 @@ metadata structure for project template:
     "type": "project",
     "description": "Schema of web application.",
     "url": null,
-    "schemas": ["plugin1/model1/schemas.svg", "plugin1/model2/schemas.svg", "plugin2/model3/schemas.svg"],
+    "schemas": ["plugin1/model1/schema.svg", "plugin1/model2/schema.svg", "plugin2/model3/schema.svg"],
     "files": ["plugin1/model1/main.js", "plugin1/model2/main.js", "plugin2/model3/app.js"]
 }
 ```
@@ -139,7 +139,7 @@ Example of metadata structure for project template with 2 plugins and 3 models:
     "type": "project",
     "description": "Example project with multiple plugins and models.",
     "url": null,
-    "schemas": ["plugin1/model1/schemas.svg", "plugin1/model2/schemas.svg", "plugin2/model3/schemas.svg"],
+    "schemas": ["plugin1/model1/schema.svg", "plugin1/model2/schema.svg", "plugin2/model3/schema.svg"],
     "files": ["plugin1/model1/main.js", "plugin1/model2/main.js", "plugin2/model3/app.js"]
 }
 ```

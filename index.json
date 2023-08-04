@@ -47,8 +47,14 @@
       "plugins": ["terrator-plugin"],
       "description": "Project private infrastructure with AWS S3 bucket.",
       "url": null,
-      "schemas": ["terrator-plugin/terraform_aws_basic_infra/schemas.svg", "terrator-plugin/terraform_aws_s3_bucket_acl/schemas.svg"],
-      "files": ["terrator-plugin/terraform_aws_basic_infra/main.tf", "terrator-plugin/terraform_aws_s3_bucket_acl/main.tf"]
+      "schemas": [
+        "terrator-plugin/terraform_aws_basic_infra/schema.svg",
+        "terrator-plugin/terraform_aws_s3_bucket_acl/schema.svg"
+      ],
+      "files": [
+        "terrator-plugin/terraform_aws_basic_infra/main.tf",
+        "terrator-plugin/terraform_aws_s3_bucket_acl/main.tf"
+      ]
     }
   ]
 }
