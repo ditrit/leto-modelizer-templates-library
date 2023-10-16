@@ -1,0 +1,141 @@
+{
+  "terrator-plugin/terraform_aws_basic_infra": {
+    "terrator-plugin": {
+      "eu-west-3a": {
+        "x": 960.8115234375,
+        "y": 51.925933837890625,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "eu-west-3b": {
+        "x": 1108.0750732421875,
+        "y": 52.24721145629883,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "eu-west-3c": {
+        "x": 1237.7169189453125,
+        "y": 52.452796936035156,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "main_vpc": {
+        "x": 490,
+        "y": 197,
+        "width": 476,
+        "height": 481,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": true
+      },
+      "frontend_subnet_az1": {
+        "x": 323.99998474121094,
+        "y": 38,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "frontend_subnet_az2": {
+        "x": 162,
+        "y": 126,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "frontend_subnet_az3": {
+        "x": 30,
+        "y": 250,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "ubuntu": {
+        "x": 814.7169799804688,
+        "y": 52.84906768798828,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "frontend_secgroup_ssh": {
+        "x": 1106.3367309570312,
+        "y": 489.2279968261719,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "lb_secgroup_https": {
+        "x": 378,
+        "y": 745,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "lb_secgroup_http": {
+        "x": 475.11248779296875,
+        "y": 45.999813079833984,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "frontend_lb": {
+        "x": 47,
+        "y": 307,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "https_lb_listener": {
+        "x": 190,
+        "y": 695,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "http_lb_listener": {
+        "x": 14,
+        "y": 730,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      },
+      "lb_target": {
+        "x": 1097.5836181640625,
+        "y": 249.94607543945312,
+        "width": 110,
+        "height": 80,
+        "needsResizing": false,
+        "needsPositioning": false,
+        "manuallyResized": false
+      }
+    }
+  }
+}
