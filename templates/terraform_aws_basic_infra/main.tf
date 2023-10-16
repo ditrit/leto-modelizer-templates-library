@@ -27,7 +27,7 @@ resource "aws_vpc" "main_vpc" {
 }
 
 resource "aws_subnet" "frontend_subnet_az1" {
-  vpc_id            = "main_vpc"
+  vpc_id            = aws_vpc.main_vpc
   cidr_block        = "10.0.0.0/24"
   availability_zone = "eu-west-3a"
 
@@ -37,7 +37,7 @@ resource "aws_subnet" "frontend_subnet_az1" {
 }
 
 resource "aws_subnet" "frontend_subnet_az2" {
-  vpc_id            = "main_vpc"
+  vpc_id            = aws_vpc.main_vpc
   cidr_block        = "10.0.1.0/24"
   availability_zone = "eu-west-3b"
 
@@ -47,7 +47,7 @@ resource "aws_subnet" "frontend_subnet_az2" {
 }
 
 resource "aws_subnet" "frontend_subnet_az3" {
-  vpc_id            = "main_vpc"
+  vpc_id            = aws_vpc.main_vpc
   cidr_block        = "10.0.2.0/24"
   availability_zone = "eu-west-3c"
 
@@ -75,7 +75,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_security_group" "frontend_secgroup_ssh" {
   name        = "frontend_secgroup_ssh"
   description = "SSH Rules for the Front-End servers"
-  vpc_id      = "main_vpc"
+  vpc_id      = aws_vpc.main_vpc
 
   ingress {
     from_port = 22
@@ -93,7 +93,7 @@ resource "aws_security_group" "frontend_secgroup_ssh" {
 resource "aws_security_group" "lb_secgroup_https" {
   name        = "lb_secgroup_https"
   description = "HTTPS Rules for the LoadBalancer"
-  vpc_id      = "main_vpc"
+  vpc_id      = aws_vpc.main_vpc
 
   ingress {
     from_port = 443
@@ -111,7 +111,7 @@ resource "aws_security_group" "lb_secgroup_https" {
 resource "aws_security_group" "lb_secgroup_http" {
   name        = "lb_secgroup_http"
   description = "HTTP Rules for the LoadBalancer"
-  vpc_id      = "main_vpc"
+  vpc_id      = aws_vpc.main_vpc
 
 
   ingress {
@@ -130,17 +130,20 @@ resource "aws_security_group" "lb_secgroup_http" {
 resource "aws_lb" "frontend_lb" {
   name               = "frontend-lb"
   load_balancer_type = "application"
-  security_groups    = ["lb_secgroup_https", "lb_secgroup_http"]
+  security_groups    = [
+    aws_security_group.lb_secgroup_https.id,
+    aws_security_group.lb_secgroup_http.id
+  ]
 
   subnets = [
-    "frontend_subnet_az1",
-    "frontend_subnet_az2",
-    "frontend_subnet_az3"
+    aws_subnet.frontend_subnet_az1.id,
+    aws_subnet.frontend_subnet_az2.id,
+    aws_subnet.frontend_subnet_az3.id
   ]
 }
 
 resource "aws_lb_listener" "https_lb_listener" {
-  load_balancer_arn = ["frontend_lb"]
+  load_balancer_arn = [aws_lb.frontend_lb.id]
   port              = "443"
   protocol          = "HTTPS"
 
@@ -151,7 +154,7 @@ resource "aws_lb_listener" "https_lb_listener" {
 }
 
 resource "aws_lb_listener" "http_lb_listener" {
-  load_balancer_arn = ["frontend_lb"]
+  load_balancer_arn = [aws_lb.frontend_lb.id]
   port              = "80"
   protocol          = "HTTP"
 
@@ -166,5 +169,5 @@ resource "aws_lb_target_group" "lb_target" {
   target_type = "instance"
   port        = 8000
   protocol    = "HTTP"
-  vpc_id      = ["main_vpc"]
+  vpc_id      = [aws_vpc.main_vpc.id]
 }
