@@ -53,7 +53,8 @@
       ],
       "files": [
         "terrator-plugin/terraform_aws_basic_infra/main.tf",
-        "terrator-plugin/terraform_aws_s3_bucket_acl/main.tf"
+        "terrator-plugin/terraform_aws_s3_bucket_acl/main.tf",
+        "leto-modelizer.config.json"
       ]
     }
   ]
