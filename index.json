@@ -7,7 +7,7 @@
     {
       "key": "terraform_webapp",
       "name": "Web application",
-      "plugin": "terrator-plugin",
+      "plugin": "@ditrit/terrator-plugin",
       "type": "model",
       "description": "Schema of web application.",
       "url": null,
@@ -16,7 +16,7 @@
     {
       "key": "terraform_java_webapp",
       "name": "Java web application",
-      "plugin": "terrator-plugin",
+      "plugin": "@ditrit/terrator-plugin",
       "type": "model",
       "description": "Schema of java web application.",
       "url": null,
@@ -25,7 +25,7 @@
     {
       "key": "github_CI",
       "name": "Default CI",
-      "plugin": "githubator-plugin",
+      "plugin": "@ditrit/githubator-plugin",
       "type": "model",
       "description": "GITHUB",
       "url": null,
@@ -34,7 +34,7 @@
     {
       "key": "terraform_aws_provider",
       "name": "Aws provider",
-      "plugin": "terrator-plugin",
+      "plugin": "@ditrit/terrator-plugin",
       "type": "component",
       "description": "Initialized aws provider.",
       "url": null,
@@ -43,7 +43,7 @@
     {
       "key": "terraform_test_application",
       "name": "Test application",
-      "plugin": "terrator-plugin",
+      "plugin": "@ditrit/terrator-plugin",
       "type": "component",
       "description": "Initialized test application.",
       "url": null,
@@ -52,7 +52,7 @@
     {
       "key": "project_template",
       "name": "Project template",
-      "plugins": ["terrator-plugin", "githubator-plugin"],
+      "plugins": ["@ditrit/terrator-plugin", "@ditrit/githubator-plugin"],
       "type": "project",
       "description": "Project template example.",
       "url": null,
